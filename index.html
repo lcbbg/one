@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沐梓天气</title>
+    <link rel="stylesheet" href="./css/index.css">
+   
+</head>
+<body>
+    <div class="body" id="root">
+        <div class="logo">
+            <img src="./img/logo.png" alt="" class="logo01">
+        </div>
+        <div class="text">
+            <input type="text" class="text01" placeholder="请输入需要查询的城市" v-model="city" @keyup.enter="searchWeather">
+            <button class="button" @click="searchWeather('北京')">搜索</button>
+        </div>
+        <div class="link">
+            <a href="javascript:;" @click="hotcity('北京')">北京&nbsp;&nbsp;</a>
+            <a href="javascript:;" @click="hotcity('上海')">上海&nbsp;&nbsp;</a>
+            <a href="javascript:;" @click="hotcity('大连')">大连&nbsp;&nbsp;</a>
+            <a href="javascript:;" @click="hotcity('贵阳')">贵阳&nbsp;&nbsp;</a>
+        </div>
+        <ul class="weatherlist">
+            <li v-for="item in List">
+                <div class="type"><span>{{ item.type }}</span></div>
+                <div class="temp"><span>{{ item.high }}~{{ item.low }}</span></div>
+                <div class="date"><span>{{ item.date }}</span></div>
+            </li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- 官网提供的 axios 在线地址 -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+  <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+</html>

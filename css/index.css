@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    position: absolute;
+    height: 600px;
+    width: 1000px;
+    margin-top: 100px;
+    margin-left: 600px;
+    
+}
+.logo{
+    position: absolute;
+    left: 320px;
+    height: 100px;
+    width: 400px;
+}
+.text{
+    position: absolute;
+    height: 40px;
+    width: 540px;
+    left: 120px;
+    top: 100px;
+}
+.text01{
+    height: 40px;
+    width: 540px;
+    text-align: center;
+    
+    border-radius: 6px;
+    outline: none;
+}
+.button{
+    position: absolute;
+    height: 45px;
+    width: 40px;
+    top: 0;
+    left: 545px;
+    border-radius: 6px;
+    outline: none;
+    background-color: navajowhite;
+}
+.link{
+    position: absolute;
+    left: 330px;
+    top: 170px;
+    font-size: 10px;
+    
+}
+a{
+    text-decoration: none;
+    color: darkslategray;
+} 
+a:hover{
+    color: deepskyblue;
+}
+.weatherlist{
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 0px;
+}
+.weatherlist li{
+    list-style: none;
+    height: 200px;
+    width: 160px;
+    background-image: url('../img/line.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    float: left;
+}
+.weatherlist li:last-child{
+    background-image: none;
+}
+.type{
+    text-align: center;
+    font-size: 30px;
+    color: hotpink;
+}
+.temp{
+    position: relative;
+    text-align: center;
+    font-size: small;
+    top: 20px;
+    color: mediumorchid;
+}
+.date{
+    position: relative;
+    top: 40px;
+    text-align: center;
+    font-size: large;
+}
